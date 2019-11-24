@@ -1,0 +1,883 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="author" content="Cody W.">
+    <title>Character Page</title>
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css?family=Kaushan+Script&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bangers&display=swap" rel="stylesheet">
+  </head>
+  <body>
+
+  <!-- Vital Character Information Section -->
+
+  <section class='sheet-text'>
+    <table>
+      <tr>
+        <td colspan='9'><h1>Werewolf: The Apocalypse (Character Sheet)</h1></td>
+      </tr>
+        <td>Name:</td>
+        <td colspan='2'><input id="name" type="text" name="name" placeholder="Character Name"></td>
+        <td>Breed:</td>
+        <td colspan='2'><select id="breed" name="breed">
+          <option value="homid">Homid</option>
+          <option value="metis">Metis</option>
+          <option value="lupus">Lupus</option>
+        </select></td>
+        <td>Pack Name:</td>
+        <td colspan='2'><input id="pack" type="text" name="pack" placeholder="Pack Name"></td>
+      </tr>
+      <tr>
+        <td>Player:</td>
+        <td colspan='2'><input id="player" type="text" name="player" placeholder="Player Name"></td>
+        <td>Auspice:</td>
+        <td colspan='2'><select id="auspice" name="auspice">
+          <option value="ragabash">Ragabash</option>
+          <option value="theurge">Theurge</option>
+          <option value="philodox">Philodox</option>
+          <option value="galliard">Galliard</option>
+          <option value="ahroun">Ahroun</option>
+        </select></td>
+        <td>Pack Totem:</td>
+        <td colspan='2'><input id="totem" type="text" name="totem" placeholder="Pack Totem"></td>
+      </tr>
+      <tr>
+        <td>Chronicle:</td>
+        <td colspan='2'><input id="chronicle" type="text" name="chronicle" placeholder="Chronicle Name"></td>
+        <td>Tribe:</td>
+        <td colspan='2'><select id="tribe" name="tribe">
+          <option value="bone-gnawers">Bone Gnawers</option>
+          <option value="black-furies">Black Furies</option>
+          <option value="children-of-gaia">Children of Gaia</option>
+          <option value="fianna">Fianna</option>
+          <option value="get-of-fenris">Get of Fenris</option>
+          <option value="glass-walkers">Glass Walkers</option>
+          <option value="red-talons">Red Talons</option>
+          <option value="shadow-lords">Shadow Lords</option>
+          <option value="silent-striders">Silent Striders</option>
+          <option value="silver-fangs">Silver Fangs</option>
+          <option value="stargazers">Stargazers</option>
+          <option value="uktena">Uktena</option>
+          <option value="wendigo">Wendigo</option>
+        </select></td>
+        <td>Concept:</td>
+        <td colspan='2'><input id="concept" type="text" name="concept" placeholder="Character Concept"></td>
+      </tr>
+
+    <!-- Character Attributes Section -->
+
+    <tr>
+      <td colspan='9'><h2>Attributes</h2></td>
+
+      <tr>
+        <td>Strength</td>
+        <td><input id="strength-spec" type="text" name="strength-spec" placeholder="Strength Specialty"></td>
+        <td>
+          <div class="dots-div">
+          <input id="strength-1" class="dots" type="checkbox" name="strength-1" value="1" checked>
+          <input id="strength-2" class="dots" type="checkbox" name="strength-2" value="1">
+          <input id="strength-3" class="dots" type="checkbox" name="strength-3" value="1">
+          <input id="strength-4" class="dots" type="checkbox" name="strength-4" value="1">
+          <input id="strength-5" class="dots" type="checkbox" name="strength-5" value="1">
+          </div>
+        </td>
+
+        <td>Charisma</td>
+        <td><input id="charisma-spec" type="text" name="charisma-spec" placeholder="Charisma Specialty"></td>
+        <td>
+          <div class="dots-div">
+          <input id="charisma-1" class="dots" type="checkbox" name="charisma-1" value="1" checked>
+          <input id="charisma-2" class="dots" type="checkbox" name="charisma-2" value="1">
+          <input id="charisma-3" class="dots" type="checkbox" name="charisma-3" value="1">
+          <input id="charisma-4" class="dots" type="checkbox" name="charisma-4" value="1">
+          <input id="charisma-5" class="dots" type="checkbox" name="charisma-5" value="1">
+          </div>
+        </td>
+
+        <td>Perception</td>
+        <td><input id="perception-spec" type="text" name="perception-spec" placeholder="Perception Specialty"></td>
+        <td>
+          <div class='dots-div'>
+          <input id="perception-1" class="dots" type="checkbox" name="perception-1" value="1" checked>
+          <input id="perception-2" class="dots" type="checkbox" name="perception-2" value="1">
+          <input id="perception-3" class="dots" type="checkbox" name="perception-3" value="1">
+          <input id="perception-4" class="dots" type="checkbox" name="perception-4" value="1">
+          <input id="perception-5" class="dots" type="checkbox" name="perception-5" value="1">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Dexterity</td>
+        <td><input id="dexterity-spec" type="text" name="dexterity-spec" placeholder="Dexterity Specialty"></td>
+        <td>
+          <div class="dots-div">
+          <input id="dexterity-1" class="dots" type="checkbox" name="dexterity-1" value="1" checked>
+          <input id="dexterity-2" class="dots" type="checkbox" name="dexterity-2" value="1">
+          <input id="dexterity-3" class="dots" type="checkbox" name="dexterity-3" value="1">
+          <input id="dexterity-4" class="dots" type="checkbox" name="dexterity-4" value="1">
+          <input id="dexterity-5" class="dots" type="checkbox" name="dexterity-5" value="1">
+          </div>
+        </td>
+
+        <td>Manipulation</td>
+        <td><input id="manipulation-spec" type="text" name="manipulation-spec" placeholder="Manipulation Specialty"></td>
+        <td>
+          <div class="dots-div">
+          <input id="manipulation-1" class="dots" type="checkbox" name="manipulation-1" value="1" checked>
+          <input id="manipulation-2" class="dots" type="checkbox" name="manipulation-2" value="1">
+          <input id="manipulation-3" class="dots" type="checkbox" name="manipulation-3" value="1">
+          <input id="manipulation-4" class="dots" type="checkbox" name="manipulation-4" value="1">
+          <input id="manipulation-5" class="dots" type="checkbox" name="manipulation-5" value="1">
+          </div>
+        </td>
+
+        <td>Intelligence</td>
+        <td><input id="intelligence-spec" type="text" name="intelligence-spec" placeholder="Intelligence Specialty"></td>
+        <td>
+          <div class='dots-div'>
+          <input id="intelligence-1" class="dots" type="checkbox" name="intelligence-1" value="1" checked>
+          <input id="intelligence-2" class="dots" type="checkbox" name="intelligence-2" value="1">
+          <input id="intelligence-3" class="dots" type="checkbox" name="intelligence-3" value="1">
+          <input id="intelligence-4" class="dots" type="checkbox" name="intelligence-4" value="1">
+          <input id="intelligence-5" class="dots" type="checkbox" name="intelligence-5" value="1">
+          </div>
+        </td>
+      </tr>
+      <tr>
+        <td>Stamina</td>
+        <td><input id="stamina-spec" type="text" name="stamina-spec" placeholder="Stamina Specialty"></td>
+        <td>
+          <div class="dots-div">
+          <input id="stamina-1" class="dots" type="checkbox" name="stamina-1" value="1" checked>
+          <input id="stamina-2" class="dots" type="checkbox" name="stamina-2" value="1">
+          <input id="stamina-3" class="dots" type="checkbox" name="stamina-3" value="1">
+          <input id="stamina-4" class="dots" type="checkbox" name="stamina-4" value="1">
+          <input id="stamina-5" class="dots" type="checkbox" name="stamina-5" value="1">
+          </div>
+        </td>
+
+        <td>Appearance</td>
+        <td><input id="appearance-spec" type="text" name="appearance-spec" placeholder="Appearance Specialty"></td>
+        <td>
+          <div class="dots-div">
+          <input id="appearance-1" class="dots" type="checkbox" name="appearance-1" value="1" checked>
+          <input id="appearance-2" class="dots" type="checkbox" name="appearance-2" value="1">
+          <input id="appearance-3" class="dots" type="checkbox" name="appearance-3" value="1">
+          <input id="appearance-4" class="dots" type="checkbox" name="appearance-4" value="1">
+          <input id="appearance-5" class="dots" type="checkbox" name="appearance-5" value="1">
+          </div>
+        </td>
+
+        <td>Perception</td>
+        <td><input id="wits-spec" type="text" name="wits-spec" placeholder="Wits Specialty"></td>
+        <td>
+          <div class='dots-div'>
+          <input id="wits-1" class="dots" type="checkbox" name="wits-1" value="1" checked>
+          <input id="wits-2" class="dots" type="checkbox" name="wits-2" value="1">
+          <input id="wits-3" class="dots" type="checkbox" name="wits-3" value="1">
+          <input id="wits-4" class="dots" type="checkbox" name="wits-4" value="1">
+          <input id="wits-5" class="dots" type="checkbox" name="wits-5" value="1">
+          </div>
+        </td>
+      </tr>
+
+  <!-- Character Abilities Section -->
+
+
+    <tr>
+      <td colspan='9'><h2>Abilities</h2></td>
+
+    <tr>
+      <td>Alertness</td>
+      <td><input id="alertness-spec" type="text" name="alertness-spec" placeholder="Alertness Specialty"></td>
+      <td>
+        <div class="dots-div">
+        <input id="alertness-1" class="dots" type="checkbox" name="alertness-1" value="1">
+        <input id="alertness-2" class="dots" type="checkbox" name="alertness-2" value="1">
+        <input id="alertness-3" class="dots" type="checkbox" name="alertness-3" value="1">
+        <input id="alertness-4" class="dots" type="checkbox" name="alertness-4" value="1">
+        <input id="alertness-5" class="dots" type="checkbox" name="alertness-5" value="1">
+        </div>
+      </td>
+
+      <td>Animal-Ken</td>
+      <td><input id="animal-ken-spec" type="text" name="animal-ken-spec" placeholder="Animal-Ken Specialty"></td>
+      <td>
+        <div class="dots-div">
+        <input id="animal-ken-1" class="dots" type="checkbox" name="animal-ken-1" value="1">
+        <input id="animal-ken-2" class="dots" type="checkbox" name="animal-ken-2" value="1">
+        <input id="animal-ken-3" class="dots" type="checkbox" name="animal-ken-3" value="1">
+        <input id="animal-ken-4" class="dots" type="checkbox" name="animal-ken-4" value="1">
+        <input id="animal-ken-5" class="dots" type="checkbox" name="animal-ken-5" value="1">
+        </div>
+      </td>
+
+      <td>Academics</td>
+      <td><input id="academics-spec" type="text" name="academics-spec" placeholder="Academics Specialty"></td>
+      <td>
+        <div class='dots-div'>
+        <input id="academics-1" class="dots" type="checkbox" name="academics-1" value="1">
+        <input id="academics-2" class="dots" type="checkbox" name="academics-2" value="1">
+        <input id="academics-3" class="dots" type="checkbox" name="academics-3" value="1">
+        <input id="academics-4" class="dots" type="checkbox" name="academics-4" value="1">
+        <input id="academics-5" class="dots" type="checkbox" name="academics-5" value="1">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Athletics</td>
+      <td><input id="athletics-spec" type="text" name="athletics-spec" placeholder="Athletics Specialty"></td>
+      <td>
+        <div class="dots-div">
+        <input id="athletics-1" class="dots" type="checkbox" name="athletics-1" value="1">
+        <input id="athletics-2" class="dots" type="checkbox" name="athletics-2" value="1">
+        <input id="athletics-3" class="dots" type="checkbox" name="athletics-3" value="1">
+        <input id="athletics-4" class="dots" type="checkbox" name="athletics-4" value="1">
+        <input id="athletics-5" class="dots" type="checkbox" name="athletics-5" value="1">
+        </div>
+      </td>
+
+      <td>Crafts</td>
+      <td><input id="crafts-spec" type="text" name="crafts-spec" placeholder="Crafts Specialty"></td>
+      <td>
+        <div class="dots-div">
+        <input id="crafts-1" class="dots" type="checkbox" name="crafts-1" value="1">
+        <input id="crafts-2" class="dots" type="checkbox" name="crafts-2" value="1">
+        <input id="crafts-3" class="dots" type="checkbox" name="crafts-3" value="1">
+        <input id="crafts-4" class="dots" type="checkbox" name="crafts-4" value="1">
+        <input id="crafts-5" class="dots" type="checkbox" name="crafts-5" value="1">
+        </div>
+      </td>
+
+      <td>Computer</td>
+      <td><input id="computer-spec" type="text" name="computer-spec" placeholder="Computer Specialty"></td>
+      <td>
+        <div class='dots-div'>
+        <input id="computer-1" class="dots" type="checkbox" name="computer-1" value="1">
+        <input id="computer-2" class="dots" type="checkbox" name="computer-2" value="1">
+        <input id="computer-3" class="dots" type="checkbox" name="computer-3" value="1">
+        <input id="computer-4" class="dots" type="checkbox" name="computer-4" value="1">
+        <input id="computer-5" class="dots" type="checkbox" name="computer-5" value="1">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Brawl</td>
+      <td><input id="brawl-spec" type="text" name="brawl-spec" placeholder="Brawl Specialty"></td>
+      <td>
+        <div class="dots-div">
+        <input id="brawl-1" class="dots" type="checkbox" name="brawl-1" value="1">
+        <input id="brawl-2" class="dots" type="checkbox" name="brawl-2" value="1">
+        <input id="brawl-3" class="dots" type="checkbox" name="brawl-3" value="1">
+        <input id="brawl-4" class="dots" type="checkbox" name="brawl-4" value="1">
+        <input id="brawl-5" class="dots" type="checkbox" name="brawl-5" value="1">
+        </div>
+      </td>
+
+      <td>Drive</td>
+      <td><input id="drive-spec" type="text" name="drive-spec" placeholder="Appearance Specialty"></td>
+      <td>
+        <div class="dots-div">
+        <input id="drive-1" class="dots" type="checkbox" name="drive-1" value="1">
+        <input id="drive-2" class="dots" type="checkbox" name="drive-2" value="1">
+        <input id="drive-3" class="dots" type="checkbox" name="drive-3" value="1">
+        <input id="drive-4" class="dots" type="checkbox" name="drive-4" value="1">
+        <input id="drive-5" class="dots" type="checkbox" name="drive-5" value="1">
+        </div>
+      </td>
+
+      <td>Enigmas</td>
+      <td><input id="enigmas-spec" type="text" name="enigmas-spec" placeholder="Enigmas Specialty"></td>
+      <td>
+        <div class='dots-div'>
+        <input id="enigmas-1" class="dots" type="checkbox" name="enigmas-1" value="1">
+        <input id="enigmas-2" class="dots" type="checkbox" name="enigmas-2" value="1">
+        <input id="enigmas-3" class="dots" type="checkbox" name="enigmas-3" value="1">
+        <input id="enigmas-4" class="dots" type="checkbox" name="enigmas-4" value="1">
+        <input id="enigmas-5" class="dots" type="checkbox" name="enigmas-5" value="1">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Empathy</td>
+      <td><input id="empathy-spec" type="text" name="empathy-spec" placeholder="Empathy Specialty"></td>
+      <td>
+        <div class="dots-div">
+        <input id="empathy-1" class="dots" type="checkbox" name="empathy-1" value="1">
+        <input id="empathy-2" class="dots" type="checkbox" name="empathy-2" value="1">
+        <input id="empathy-3" class="dots" type="checkbox" name="empathy-3" value="1">
+        <input id="empathy-4" class="dots" type="checkbox" name="empathy-4" value="1">
+        <input id="empathy-5" class="dots" type="checkbox" name="empathy-5" value="1">
+        </div>
+      </td>
+
+      <td>Etiquette</td>
+      <td><input id="etiquette-spec" type="text" name="etiquette-spec" placeholder="Etiquette Specialty"></td>
+      <td>
+        <div class="dots-div">
+        <input id="etiquette-1" class="dots" type="checkbox" name="etiquette-1" value="1">
+        <input id="etiquette-2" class="dots" type="checkbox" name="etiquette-2" value="1">
+        <input id="etiquette-3" class="dots" type="checkbox" name="etiquette-3" value="1">
+        <input id="etiquette-4" class="dots" type="checkbox" name="etiquette-4" value="1">
+        <input id="etiquette-5" class="dots" type="checkbox" name="etiquette-5" value="1">
+        </div>
+      </td>
+
+      <td>Investigation</td>
+      <td><input id="investigation-spec" type="text" name="investigation-spec" placeholder="Investigation Specialty"></td>
+      <td>
+        <div class='dots-div'>
+        <input id="investigation-1" class="dots" type="checkbox" name="investigation-1" value="1">
+        <input id="investigation-2" class="dots" type="checkbox" name="investigation-2" value="1">
+        <input id="investigation-3" class="dots" type="checkbox" name="investigation-3" value="1">
+        <input id="investigation-4" class="dots" type="checkbox" name="investigation-4" value="1">
+        <input id="investigation-5" class="dots" type="checkbox" name="investigation-5" value="1">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Expression</td>
+      <td><input id="expression-spec" type="text" name="expression-spec" placeholder="Expression Specialty"></td>
+      <td>
+        <div class="dots-div">
+        <input id="expression-1" class="dots" type="checkbox" name="expression-1" value="1">
+        <input id="expression-2" class="dots" type="checkbox" name="expression-2" value="1">
+        <input id="expression-3" class="dots" type="checkbox" name="expression-3" value="1">
+        <input id="expression-4" class="dots" type="checkbox" name="expression-4" value="1">
+        <input id="expression-5" class="dots" type="checkbox" name="expression-5" value="1">
+        </div>
+      </td>
+
+      <td>Firearms</td>
+      <td><input id="firearms-spec" type="text" name="firearms-spec" placeholder="Firearms Specialty"></td>
+      <td>
+        <div class="dots-div">
+        <input id="firearms-1" class="dots" type="checkbox" name="firearms-1" value="1">
+        <input id="firearms-2" class="dots" type="checkbox" name="firearms-2" value="1">
+        <input id="firearms-3" class="dots" type="checkbox" name="firearms-3" value="1">
+        <input id="firearms-4" class="dots" type="checkbox" name="firearms-4" value="1">
+        <input id="firearms-5" class="dots" type="checkbox" name="firearms-5" value="1">
+        </div>
+      </td>
+
+      <td>Law</td>
+      <td><input id="law-spec" type="text" name="law-spec" placeholder="Law Specialty"></td>
+      <td>
+        <div class='dots-div'>
+        <input id="law-1" class="dots" type="checkbox" name="law-1" value="1">
+        <input id="law-2" class="dots" type="checkbox" name="law-2" value="1">
+        <input id="law-3" class="dots" type="checkbox" name="law-3" value="1">
+        <input id="law-4" class="dots" type="checkbox" name="law-4" value="1">
+        <input id="law-5" class="dots" type="checkbox" name="law-5" value="1">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Intimidation</td>
+      <td><input id="intimidation-spec" type="text" name="intimidation-spec" placeholder="Intimidation Specialty"></td>
+      <td>
+        <div class="dots-div">
+        <input id="intimidation-1" class="dots" type="checkbox" name="intimidation-1" value="1">
+        <input id="intimidation-2" class="dots" type="checkbox" name="intimidation-2" value="1">
+        <input id="intimidation-3" class="dots" type="checkbox" name="intimidation-3" value="1">
+        <input id="intimidation-4" class="dots" type="checkbox" name="intimidation-4" value="1">
+        <input id="intimidation-5" class="dots" type="checkbox" name="intimidation-5" value="1">
+        </div>
+      </td>
+
+      <td>Larceny</td>
+      <td><input id="larceny-spec" type="text" name="larceny-spec" placeholder="Larceny Specialty"></td>
+      <td>
+        <div class="dots-div">
+        <input id="larceny-1" class="dots" type="checkbox" name="larceny-1" value="1">
+        <input id="larceny-2" class="dots" type="checkbox" name="larceny-2" value="1">
+        <input id="larceny-3" class="dots" type="checkbox" name="larceny-3" value="1">
+        <input id="larceny-4" class="dots" type="checkbox" name="larceny-4" value="1">
+        <input id="larceny-5" class="dots" type="checkbox" name="larceny-5" value="1">
+        </div>
+      </td>
+
+      <td>Medicine</td>
+      <td><input id="medicine-spec" type="text" name="medicine-spec" placeholder="Medicine Specialty"></td>
+      <td>
+        <div class='dots-div'>
+        <input id="medicine-1" class="dots" type="checkbox" name="medicine-1" value="1">
+        <input id="medicine-2" class="dots" type="checkbox" name="medicine-2" value="1">
+        <input id="medicine-3" class="dots" type="checkbox" name="medicine-3" value="1">
+        <input id="medicine-4" class="dots" type="checkbox" name="medicine-4" value="1">
+        <input id="medicine-5" class="dots" type="checkbox" name="medicine-5" value="1">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Leadership</td>
+      <td><input id="leadership-spec" type="text" name="leadership-spec" placeholder="Leadership Specialty"></td>
+      <td>
+        <div class="dots-div">
+        <input id="leadership-1" class="dots" type="checkbox" name="leadership-1" value="1">
+        <input id="leadership-2" class="dots" type="checkbox" name="leadership-2" value="1">
+        <input id="leadership-3" class="dots" type="checkbox" name="leadership-3" value="1">
+        <input id="leadership-4" class="dots" type="checkbox" name="leadership-4" value="1">
+        <input id="leadership-5" class="dots" type="checkbox" name="leadership-5" value="1">
+        </div>
+      </td>
+
+      <td>Melee</td>
+      <td><input id="melee-spec" type="text" name="melee-spec" placeholder="Melee Specialty"></td>
+      <td>
+        <div class="dots-div">
+        <input id="melee-1" class="dots" type="checkbox" name="melee-1" value="1">
+        <input id="melee-2" class="dots" type="checkbox" name="melee-2" value="1">
+        <input id="melee-3" class="dots" type="checkbox" name="melee-3" value="1">
+        <input id="melee-4" class="dots" type="checkbox" name="melee-4" value="1">
+        <input id="melee-5" class="dots" type="checkbox" name="melee-5" value="1">
+        </div>
+      </td>
+
+      <td>Occult</td>
+      <td><input id="occult-spec" type="text" name="occult-spec" placeholder="Occult Specialty"></td>
+      <td>
+        <div class='dots-div'>
+        <input id="occult-1" class="dots" type="checkbox" name="occult-1" value="1">
+        <input id="occult-2" class="dots" type="checkbox" name="occult-2" value="1">
+        <input id="occult-3" class="dots" type="checkbox" name="occult-3" value="1">
+        <input id="occult-4" class="dots" type="checkbox" name="occult-4" value="1">
+        <input id="occult-5" class="dots" type="checkbox" name="occult-5" value="1">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Primal-Urge</td>
+      <td><input id="primal-urge-spec" type="text" name="primal-urge-spec" placeholder="Primal-Urge Specialty"></td>
+      <td>
+        <div class="dots-div">
+        <input id="primal-urge-1" class="dots" type="checkbox" name="primal-urge-1" value="1">
+        <input id="primal-urge-2" class="dots" type="checkbox" name="primal-urge-2" value="1">
+        <input id="primal-urge-3" class="dots" type="checkbox" name="primal-urge-3" value="1">
+        <input id="primal-urge-4" class="dots" type="checkbox" name="primal-urge-4" value="1">
+        <input id="primal-urge-5" class="dots" type="checkbox" name="primal-urge-5" value="1">
+        </div>
+      </td>
+
+      <td>Performance</td>
+      <td><input id="performance-spec" type="text" name="performance-spec" placeholder="Performance Specialty"></td>
+      <td>
+        <div class="dots-div">
+        <input id="performance-1" class="dots" type="checkbox" name="performance-1" value="1">
+        <input id="performance-2" class="dots" type="checkbox" name="performance-2" value="1">
+        <input id="performance-3" class="dots" type="checkbox" name="performance-3" value="1">
+        <input id="performance-4" class="dots" type="checkbox" name="performance-4" value="1">
+        <input id="performance-5" class="dots" type="checkbox" name="performance-5" value="1">
+        </div>
+      </td>
+
+      <td>Rituals</td>
+      <td><input id="rituals-spec" type="text" name="rituals-spec" placeholder="Rituals Specialty"></td>
+      <td>
+        <div class='dots-div'>
+        <input id="rituals-1" class="dots" type="checkbox" name="rituals-1" value="1">
+        <input id="rituals-2" class="dots" type="checkbox" name="rituals-2" value="1">
+        <input id="rituals-3" class="dots" type="checkbox" name="rituals-3" value="1">
+        <input id="rituals-4" class="dots" type="checkbox" name="rituals-4" value="1">
+        <input id="rituals-5" class="dots" type="checkbox" name="rituals-5" value="1">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Streetwise</td>
+      <td><input id="streetwise-spec" type="text" name="streetwise-spec" placeholder="Streetwise Specialty"></td>
+      <td>
+        <div class="dots-div">
+        <input id="streetwise-1" class="dots" type="checkbox" name="streetwise-1" value="1">
+        <input id="streetwise-2" class="dots" type="checkbox" name="streetwise-2" value="1">
+        <input id="streetwise-3" class="dots" type="checkbox" name="streetwise-3" value="1">
+        <input id="streetwise-4" class="dots" type="checkbox" name="streetwise-4" value="1">
+        <input id="streetwise-5" class="dots" type="checkbox" name="streetwise-5" value="1">
+        </div>
+      </td>
+
+      <td>Stealth</td>
+      <td><input id="stealth-spec" type="text" name="stealth-spec" placeholder="Stealth Specialty"></td>
+      <td>
+        <div class="dots-div">
+        <input id="stealth-1" class="dots" type="checkbox" name="stealth-1" value="1">
+        <input id="stealth-2" class="dots" type="checkbox" name="stealth-2" value="1">
+        <input id="stealth-3" class="dots" type="checkbox" name="stealth-3" value="1">
+        <input id="stealth-4" class="dots" type="checkbox" name="stealth-4" value="1">
+        <input id="stealth-5" class="dots" type="checkbox" name="stealth-5" value="1">
+        </div>
+      </td>
+
+      <td>Science</td>
+      <td><input id="science-spec" type="text" name="science-spec" placeholder="Science Specialty"></td>
+      <td>
+        <div class='dots-div'>
+        <input id="science-1" class="dots" type="checkbox" name="science-1" value="1">
+        <input id="science-2" class="dots" type="checkbox" name="science-2" value="1">
+        <input id="science-3" class="dots" type="checkbox" name="science-3" value="1">
+        <input id="science-4" class="dots" type="checkbox" name="science-4" value="1">
+        <input id="science-5" class="dots" type="checkbox" name="science-5" value="1">
+        </div>
+      </td>
+    </tr>
+    <tr>
+      <td>Subterfuge</td>
+      <td><input id="subterfuge-spec" type="text" name="subterfuge-spec" placeholder="Subterfuge Specialty"></td>
+      <td>
+        <div class="dots-div">
+        <input id="subterfuge-1" class="dots" type="checkbox" name="subterfuge-1" value="1">
+        <input id="subterfuge-2" class="dots" type="checkbox" name="subterfuge-2" value="1">
+        <input id="subterfuge-3" class="dots" type="checkbox" name="subterfuge-3" value="1">
+        <input id="subterfuge-4" class="dots" type="checkbox" name="subterfuge-4" value="1">
+        <input id="subterfuge-5" class="dots" type="checkbox" name="subterfuge-5" value="1">
+        </div>
+      </td>
+
+      <td>Survival</td>
+      <td><input id="survival-spec" type="text" name="survival-spec" placeholder="Survival Specialty"></td>
+      <td>
+        <div class="dots-div">
+        <input id="survival-1" class="dots" type="checkbox" name="survival-1" value="1">
+        <input id="survival-2" class="dots" type="checkbox" name="survival-2" value="1">
+        <input id="survival-3" class="dots" type="checkbox" name="survival-3" value="1">
+        <input id="survival-4" class="dots" type="checkbox" name="survival-4" value="1">
+        <input id="survival-5" class="dots" type="checkbox" name="survival-5" value="1">
+        </div>
+      </td>
+
+      <td>Technology</td>
+      <td><input id="technology-spec" type="text" name="technology-spec" placeholder="Technology Specialty"></td>
+      <td>
+        <div class='dots-div'>
+        <input id="technology-1" class="dots" type="checkbox" name="technology-1" value="1">
+        <input id="technology-2" class="dots" type="checkbox" name="technology-2" value="1">
+        <input id="technology-3" class="dots" type="checkbox" name="technology-3" value="1">
+        <input id="technology-4" class="dots" type="checkbox" name="technology-4" value="1">
+        <input id="technology-5" class="dots" type="checkbox" name="technology-5" value="1">
+        </div>
+      </td>
+    </tr>
+
+  <!-- Character Advantages Section -->
+
+    <tr>
+      <td colspan='9'><h2>Advantages</h2></td>
+
+        <tr>
+          <td colspan='3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Backgrounds</td>
+          <td colspan='3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gifts</td>
+          <td colspan='3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gifts</td>
+        </tr>
+        <tr>
+          <td colspan='2'><select id="background1" name="background1">
+            <!-- Set Options by Javascript, or .csv -->
+            <option value="---">----------</option>
+          </select></td>
+          <td><div class='dots-div'>
+          <input id="background1-1" class="dots" type="checkbox" name="background-1" value="1">
+          <input id="background1-2" class="dots" type="checkbox" name="background1-2" value="1">
+          <input id="background1-3" class="dots" type="checkbox" name="background1-3" value="1">
+          <input id="background1-4" class="dots" type="checkbox" name="background1-4" value="1">
+          <input id="background1-5" class="dots" type="checkbox" name="background1-5" value="1">
+          </div></td>
+          <td colspan='3'><select id="gift-1" name="gift-1">
+            <!-- Set Options by Javascript, or .csv -->
+            <option value="---">----------</option>
+          </select></td>
+          <td colspan='3'><select id="gift-6" name="gift-6">
+            <!-- Set Options by Javascript, or .csv -->
+            <option value="---">----------</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td colspan='2'><select id="background2" name="background2">
+            <!-- Set Options by Javascript, or .csv -->
+            <option value="---">----------</option>
+          </select></td>
+          <td><div class='dots-div'>
+          <input id="background2-1" class="dots" type="checkbox" name="background2-1" value="1">
+          <input id="background2-2" class="dots" type="checkbox" name="background2-2" value="1">
+          <input id="background2-3" class="dots" type="checkbox" name="background2-3" value="1">
+          <input id="background2-4" class="dots" type="checkbox" name="background2-4" value="1">
+          <input id="background2-5" class="dots" type="checkbox" name="background2-5" value="1">
+          </div></td>
+          <td colspan='3'><select id="gift-2" name="gift-2">
+            <!-- Set Options by Javascript, or .csv -->
+            <option value="---">----------</option>
+          </select></td>
+          <td colspan='3'><select id="gift-7" name="gift-7">
+            <!-- Set Options by Javascript, or .csv -->
+            <option value="---">----------</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td colspan='2'><select id="background3" name="background3">
+            <!-- Set Options by Javascript, or .csv -->
+            <option value="---">----------</option>
+          </select></td>
+          <td><div class='dots-div'>
+          <input id="background3-1" class="dots" type="checkbox" name="background3-1" value="1">
+          <input id="background3-2" class="dots" type="checkbox" name="background3-2" value="1">
+          <input id="background3-3" class="dots" type="checkbox" name="background3-3" value="1">
+          <input id="background3-4" class="dots" type="checkbox" name="background3-4" value="1">
+          <input id="background3-5" class="dots" type="checkbox" name="background3-5" value="1">
+          </div></td>
+          <td colspan='3'><select id="gift-3" name="gift-3">
+            <!-- Set Options by Javascript, or .csv -->
+            <option value="---">----------</option>
+          </select></td>
+          <td colspan='3'><select id="gift-8" name="gift-8">
+            <!-- Set Options by Javascript, or .csv -->
+            <option value="---">----------</option>
+          </select></td>
+        </tr>
+        <tr>
+          <td colspan='2'><select id="background4" name="background4">
+            <!-- Set Options by Javascript, or .csv -->
+            <option value="---">----------</option>
+          </select></td>
+          <td><div class='dots-div'>
+          <input id="background4-1" class="dots" type="checkbox" name="background4-1" value="1">
+          <input id="background4-2" class="dots" type="checkbox" name="background4-2" value="1">
+          <input id="background4-3" class="dots" type="checkbox" name="background4-3" value="1">
+          <input id="background4-4" class="dots" type="checkbox" name="background4-4" value="1">
+          <input id="background4-5" class="dots" type="checkbox" name="background4-5" value="1">
+          </div></td>
+          <td colspan='3'><select id="gift-4" name="gift-4">
+            <!-- Set Options by Javascript, or .csv -->
+            <option value="---">----------</option>
+          </select></td>
+          <td colspan='3'><select id="gift-9" name="gift-9">
+            <!-- Set Options by Javascript, or .csv -->
+            <option value="---">----------</option>
+          </select></td>
+        </tr>
+          <td colspan='2'><select id="background5" name="background5">
+            <!-- Set Options by Javascript, or .csv -->
+            <option value="---">----------</option>
+          </select></td>
+          <td><div class='dots-div'>
+          <input id="background5-1" class="dots" type="checkbox" name="background5-1" value="1">
+          <input id="background5-2" class="dots" type="checkbox" name="background5-2" value="1">
+          <input id="background5-3" class="dots" type="checkbox" name="background5-3" value="1">
+          <input id="background5-4" class="dots" type="checkbox" name="background5-4" value="1">
+          <input id="background5-5" class="dots" type="checkbox" name="background5-5" value="1">
+          </div></td>
+          <td colspan='3'><select id="gift-5" name="gift-5">
+            <!-- Set Options by Javascript, or .csv -->
+            <option value="---">----------</option>
+          </select></td>
+          <td colspan='3'><select id="gift-10" name="gift-10">
+            <!-- Set Options by Javascript, or .csv -->
+            <option value="---">----------</option>
+          </select></td>
+        </tr>
+
+  <!-- Character Tempers Section -->
+
+    <tr>
+      <td colspan='9'><h2>Renown and Tempers</h2></td>
+    </tr>
+    <tr>
+      <td colspan='3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Glory</td>
+      <td colspan='4'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rage</td>
+      <td colspan='2'>Health</td>
+    </tr>
+    <tr>
+      <td colspan='3'><div class='dots-div'>
+      <input id="glory-1" class="dots" type="checkbox" name="glory-1" value="1">
+      <input id="glory-2" class="dots" type="checkbox" name="glory-2" value="1">
+      <input id="glory-3" class="dots" type="checkbox" name="glory-3" value="1">
+      <input id="glory-4" class="dots" type="checkbox" name="glory-4" value="1">
+      <input id="glory-5" class="dots" type="checkbox" name="glory-5" value="1">
+      <input id="glory-6" class="dots" type="checkbox" name="glory-6" value="1">
+      <input id="glory-7" class="dots" type="checkbox" name="glory-7" value="1">
+      <input id="glory-8" class="dots" type="checkbox" name="glory-8" value="1">
+      <input id="glory-9" class="dots" type="checkbox" name="glory-9" value="1">
+      <input id="glory-10" class="dots" type="checkbox" name="glory-10" value="1">
+      </div></td>
+      <td colspan='3'><div class='dots-div'>
+      <input id="rage-1" class="dots" type="checkbox" name="rage-1" value="1">
+      <input id="rage-2" class="dots" type="checkbox" name="rage-2" value="1">
+      <input id="rage-3" class="dots" type="checkbox" name="rage-3" value="1">
+      <input id="rage-4" class="dots" type="checkbox" name="rage-4" value="1">
+      <input id="rage-5" class="dots" type="checkbox" name="rage-5" value="1">
+      <input id="rage-6" class="dots" type="checkbox" name="rage-6" value="1">
+      <input id="rage-7" class="dots" type="checkbox" name="rage-7" value="1">
+      <input id="rage-8" class="dots" type="checkbox" name="rage-8" value="1">
+      <input id="rage-9" class="dots" type="checkbox" name="rage-9" value="1">
+      <input id="rage-10" class="dots" type="checkbox" name="rage-10" value="1">
+      </div></td>
+      <td>Bruised</td>
+      <td>-0</td>
+      <td>[ ]</td>
+    </tr>
+    <tr>
+      <td colspan='3'><div class='dots-div'>
+      <input id="temp-glory-1" class='temp-traits' type="checkbox" name="temp-glory-1" value="1">
+      <input id="temp-glory-2" class='temp-traits' type="checkbox" name="temp-glory-2" value="1">
+      <input id="temp-glory-3" class='temp-traits' type="checkbox" name="temp-glory-3" value="1">
+      <input id="temp-glory-4" class='temp-traits' type="checkbox" name="temp-glory-4" value="1">
+      <input id="temp-glory-5" class='temp-traits' type="checkbox" name="temp-glory-5" value="1">
+      <input id="temp-glory-6" class='temp-traits' type="checkbox" name="temp-glory-6" value="1">
+      <input id="temp-glory-7" class='temp-traits' type="checkbox" name="temp-glory-7" value="1">
+      <input id="temp-glory-8" class='temp-traits' type="checkbox" name="temp-glory-8" value="1">
+      <input id="temp-glory-9" class='temp-traits' type="checkbox" name="temp-glory-9" value="1">
+      <input id="temp-glory-10" class='temp-traits' type="checkbox" name="temp-glory-10" value="1">
+      </div></td>
+      <td colspan='3'><div class='dots-div'>
+      <input id="temp-rage-1" class='temp-traits' type="checkbox" name="temp-rage-1" value="1">
+      <input id="temp-rage-2" class='temp-traits' type="checkbox" name="temp-rage-2" value="1">
+      <input id="temp-rage-3" class='temp-traits' type="checkbox" name="temp-rage-3" value="1">
+      <input id="temp-rage-4" class='temp-traits' type="checkbox" name="temp-rage-4" value="1">
+      <input id="temp-rage-5" class='temp-traits' type="checkbox" name="temp-rage-5" value="1">
+      <input id="temp-rage-6" class='temp-traits' type="checkbox" name="temp-rage-6" value="1">
+      <input id="temp-rage-7" class='temp-traits' type="checkbox" name="temp-rage-7" value="1">
+      <input id="temp-rage-8" class='temp-traits' type="checkbox" name="temp-rage-8" value="1">
+      <input id="temp-rage-9" class='temp-traits' type="checkbox" name="temp-rage-9" value="1">
+      <input id="temp-rage-10" class='temp-traits' type="checkbox" name="temp-rage-10" value="1">
+      </div></td>
+      <td>Hurt</td>
+      <td>-1</td>
+      <td>[ ]</td>
+    </tr>
+    <tr>
+      <td colspan='3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Honor</td>
+      <td colspan='3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Gnosis</td>
+      <td>Injured</td>
+      <td>-1</td>
+      <td>[ ]</td>
+    </tr>
+    <tr>
+      <td colspan='3'><div class='dots-div'>
+      <input id="honor-1" class="dots" type="checkbox" name="honor-1" value="1">
+      <input id="honor-2" class="dots" type="checkbox" name="honor-2" value="1">
+      <input id="honor-3" class="dots" type="checkbox" name="honor-3" value="1">
+      <input id="honor-4" class="dots" type="checkbox" name="honor-4" value="1">
+      <input id="honor-5" class="dots" type="checkbox" name="honor-5" value="1">
+      <input id="honor-6" class="dots" type="checkbox" name="honor-6" value="1">
+      <input id="honor-7" class="dots" type="checkbox" name="honor-7" value="1">
+      <input id="honor-8" class="dots" type="checkbox" name="honor-8" value="1">
+      <input id="honor-9" class="dots" type="checkbox" name="honor-9" value="1">
+      <input id="honor-10" class="dots" type="checkbox" name="honor-10" value="1">
+      </div></td>
+      <td colspan='3'><div class='dots-div'>
+      <input id="gnosis-1" class="dots" type="checkbox" name="gnosis-1" value="1">
+      <input id="gnosis-2" class="dots" type="checkbox" name="gnosis-2" value="1">
+      <input id="gnosis-3" class="dots" type="checkbox" name="gnosis-3" value="1">
+      <input id="gnosis-4" class="dots" type="checkbox" name="gnosis-4" value="1">
+      <input id="gnosis-5" class="dots" type="checkbox" name="gnosis-5" value="1">
+      <input id="gnosis-6" class="dots" type="checkbox" name="gnosis-6" value="1">
+      <input id="gnosis-7" class="dots" type="checkbox" name="gnosis-7" value="1">
+      <input id="gnosis-8" class="dots" type="checkbox" name="gnosis-8" value="1">
+      <input id="gnosis-9" class="dots" type="checkbox" name="gnosis-9" value="1">
+      <input id="gnosis-10" class="dots" type="checkbox" name="gnosis-10" value="1">
+      </div></td>
+      <td>Wounded</td>
+      <td>-2</td>
+      <td>[ ]</td>
+    </tr>
+    <tr>
+      <td colspan='3'><div class='dots-div'>
+      <input id="temp-honor-1" class='temp-traits' type="checkbox" name="temp-honor-1" value="1">
+      <input id="temp-honor-2" class='temp-traits' type="checkbox" name="temp-honor-2" value="1">
+      <input id="temp-honor-3" class='temp-traits' type="checkbox" name="temp-honor-3" value="1">
+      <input id="temp-honor-4" class='temp-traits' type="checkbox" name="temp-honor-4" value="1">
+      <input id="temp-honor-5" class='temp-traits' type="checkbox" name="temp-honor-5" value="1">
+      <input id="temp-honor-6" class='temp-traits' type="checkbox" name="temp-honor-6" value="1">
+      <input id="temp-honor-7" class='temp-traits' type="checkbox" name="temp-honor-7" value="1">
+      <input id="temp-honor-8" class='temp-traits' type="checkbox" name="temp-honor-8" value="1">
+      <input id="temp-honor-9" class='temp-traits' type="checkbox" name="temp-honor-9" value="1">
+      <input id="temp-honor-10" class='temp-traits' type="checkbox" name="temp-honor-10" value="1">
+      </div></td>
+      <td colspan='3'><div class='dots-div'>
+      <input id="temp-gnosis-1" class='temp-traits' type="checkbox" name="temp-gnosis-1" value="1">
+      <input id="temp-gnosis-2" class='temp-traits' type="checkbox" name="temp-gnosis-2" value="1">
+      <input id="temp-gnosis-3" class='temp-traits' type="checkbox" name="temp-gnosis-3" value="1">
+      <input id="temp-gnosis-4" class='temp-traits' type="checkbox" name="temp-gnosis-4" value="1">
+      <input id="temp-gnosis-5" class='temp-traits' type="checkbox" name="temp-gnosis-5" value="1">
+      <input id="temp-gnosis-6" class='temp-traits' type="checkbox" name="temp-gnosis-6" value="1">
+      <input id="temp-gnosis-7" class='temp-traits' type="checkbox" name="temp-gnosis-7" value="1">
+      <input id="temp-gnosis-8" class='temp-traits' type="checkbox" name="temp-gnosis-8" value="1">
+      <input id="temp-gnosis-9" class='temp-traits' type="checkbox" name="temp-gnosis-9" value="1">
+      <input id="temp-gnosis-10" class='temp-traits' type="checkbox" name="temp-gnosis-10" value="1">
+      </div></td>
+      <td>Mauled</td>
+      <td>-2</td>
+      <td>[ ]</td>
+    </tr>
+    <tr>
+      <td colspan='3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Wisdom</td>
+      <td colspan='3'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Willpower</td>
+      <td>Crippled</td>
+      <td>-5</td>
+      <td>[ ]</td>
+    </tr>
+    <tr>
+      <td colspan='3'><div class='dots-div'>
+      <input id="wisdom-1" class="dots" type="checkbox" name="wisdom-1" value="1">
+      <input id="wisdom-2" class="dots" type="checkbox" name="wisdom-2" value="1">
+      <input id="wisdom-3" class="dots" type="checkbox" name="wisdom-3" value="1">
+      <input id="wisdom-4" class="dots" type="checkbox" name="wisdom-4" value="1">
+      <input id="wisdom-5" class="dots" type="checkbox" name="wisdom-5" value="1">
+      <input id="wisdom-6" class="dots" type="checkbox" name="wisdom-6" value="1">
+      <input id="wisdom-7" class="dots" type="checkbox" name="wisdom-7" value="1">
+      <input id="wisdom-8" class="dots" type="checkbox" name="wisdom-8" value="1">
+      <input id="wisdom-9" class="dots" type="checkbox" name="wisdom-9" value="1">
+      <input id="wisdom-10" class="dots" type="checkbox" name="wisdom-10" value="1">
+      </div></td>
+      <td colspan='3'><div class='dots-div'>
+      <input id="willpower-1" class="dots" type="checkbox" name="willpower-1" value="1">
+      <input id="willpower-2" class="dots" type="checkbox" name="willpower-2" value="1">
+      <input id="willpower-3" class="dots" type="checkbox" name="willpower-3" value="1">
+      <input id="willpower-4" class="dots" type="checkbox" name="willpower-4" value="1">
+      <input id="willpower-5" class="dots" type="checkbox" name="willpower-5" value="1">
+      <input id="willpower-6" class="dots" type="checkbox" name="willpower-6" value="1">
+      <input id="willpower-7" class="dots" type="checkbox" name="willpower-7" value="1">
+      <input id="willpower-8" class="dots" type="checkbox" name="willpower-8" value="1">
+      <input id="willpower-9" class="dots" type="checkbox" name="willpower-9" value="1">
+      <input id="willpower-10" class="dots" type="checkbox" name="willpower-10" value="1">
+      </div></td>
+      <td>Incapacitated</td>
+      <td></td>
+      <td>[ ]</td>
+    </tr>
+    <tr>
+      <td colspan='3'><div class='dots-div'>
+      <input id="temp-wisdom-1" class='temp-traits' type="checkbox" name="temp-wisdom-1" value="1">
+      <input id="temp-wisdom-2" class='temp-traits' type="checkbox" name="temp-wisdom-2" value="1">
+      <input id="temp-wisdom-3" class='temp-traits' type="checkbox" name="temp-wisdom-3" value="1">
+      <input id="temp-wisdom-4" class='temp-traits' type="checkbox" name="temp-wisdom-4" value="1">
+      <input id="temp-wisdom-5" class='temp-traits' type="checkbox" name="temp-wisdom-5" value="1">
+      <input id="temp-wisdom-6" class='temp-traits' type="checkbox" name="temp-wisdom-6" value="1">
+      <input id="temp-wisdom-7" class='temp-traits' type="checkbox" name="temp-wisdom-7" value="1">
+      <input id="temp-wisdom-8" class='temp-traits' type="checkbox" name="temp-wisdom-8" value="1">
+      <input id="temp-wisdom-9" class='temp-traits' type="checkbox" name="temp-wisdom-9" value="1">
+      <input id="temp-wisdom-10" class='temp-traits' type="checkbox" name="temp-wisdom-10" value="1">
+      </div></td>
+      <td colspan='3'><div class='dots-div'>
+      <input id="temp-willpower-1" class='temp-traits' type="checkbox" name="temp-willpower-1" value="1">
+      <input id="temp-willpower-2" class='temp-traits' type="checkbox" name="temp-willpower-2" value="1">
+      <input id="temp-willpower-3" class='temp-traits' type="checkbox" name="temp-willpower-3" value="1">
+      <input id="temp-willpower-4" class='temp-traits' type="checkbox" name="temp-willpower-4" value="1">
+      <input id="temp-willpower-5" class='temp-traits' type="checkbox" name="temp-willpower-5" value="1">
+      <input id="temp-willpower-6" class='temp-traits' type="checkbox" name="temp-willpower-6" value="1">
+      <input id="temp-willpower-7" class='temp-traits' type="checkbox" name="temp-willpower-7" value="1">
+      <input id="temp-willpower-8" class='temp-traits' type="checkbox" name="temp-willpower-8" value="1">
+      <input id="temp-willpower-9" class='temp-traits' type="checkbox" name="temp-willpower-9" value="1">
+      <input id="temp-willpower-10" class='temp-traits' type="checkbox" name="temp-willpower-10" value="1">
+      </div></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+    <tr>
+      <td colspan='7'>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Rank</td>
+      <td colspan='2'>Experience</td>
+    </tr>
+    <table>
+      <br />
+  </section>
+  </body>
+</html>

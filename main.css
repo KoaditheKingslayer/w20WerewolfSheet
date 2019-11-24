@@ -1,0 +1,80 @@
+body {
+  background-color: rgba(160,80,80,1);
+  margin-left: 15%;
+  margin-right: 15%;
+  font-weight: bold;
+  font-family: 'Kaushan Script', cursive;
+}
+
+h1 {
+  font-family: 'Bangers', cursive;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+}
+
+section {
+  background-color: rgba(255,255,255,1);
+  height: 100%;
+  width: 100%;
+  border: 0px;
+}
+
+select {
+  width: 175px;
+}
+
+.dots {
+  width: 1em;
+  height: 1em;
+  background-color: white;
+  border-radius: 50%;
+  vertical-align: middle;
+  border: 1px solid #aaa;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.dots:checked {
+  background-color: black;
+}
+
+.temp-traits {
+  width: 1em;
+  height: 1em;
+  background-color: white;
+  border-radius: 25%;
+  vertical-align: middle;
+  border: 1px solid #aaa;
+  -webkit-appearance: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.temp-traits:checked {
+  background-color: black;
+}
+
+.dots-div input {
+  margin: 0;
+  padding: 0;
+  width: 13px;
+  height:13px;
+  overflow:hidden
+
+}
+
+table {
+  border-collapse: collapse;
+  margin: auto;
+  width: 95%;
+  padding: 0px;
+
+}
+
+td {
+  padding: 10px;
+}
